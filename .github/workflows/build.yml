@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./bookmark-api
+        working-directory:
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK 11
