@@ -33,4 +33,4 @@ jobs:
         run: |
           ./mvnw clean package jib:dockerBuild -DskipTests
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-          docker push ${{ secrets.DOCKER_USERNAME }}bookarker-api-jib:0.0.1
+          docker push ${{ secrets.DOCKER_USERNAME }}/bookmarker-api-jib:0.0.1
